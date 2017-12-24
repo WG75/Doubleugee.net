@@ -1,3 +1,3 @@
 import './styles/main.css';
 
-console.log('yay!!!!!');
+console.log('yay!');

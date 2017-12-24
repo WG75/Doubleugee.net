@@ -7,9 +7,12 @@
   "author": "doubleu-gee <doubleu.gee10@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "parcel index.html"
+    "start": "node ./src/server/index.js",
+    "watch": "parcel watch src/client/app.js",
+    "dev": "concurrently \"yarn watch\" \"yarn start\""
   },
   "dependencies": {
+    "concurrently": "^3.5.1",
     "express": "^4.16.2"
   },
   "devDependencies": {
