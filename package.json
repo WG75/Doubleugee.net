@@ -11,13 +11,14 @@
     "watch": "parcel watch src/client/app.js",
     "dev": "concurrently \"yarn watch\" \"yarn start\"",
     "lint": "eslint src/**/*.js",
-    "lint:fix": "yarn lint --fix"
+    "lint:fix": "yarn lint --fix",
+    "lintcss": "stylelint src/client/styles/**/*.css",
+    "lintcss:fix": "yarn lintcss --fix"
   },
   "dependencies": {
     "express": "^4.16.2"
   },
   "devDependencies": {
-    "babel-eslint": "^8.1.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "concurrently": "^3.5.1",
@@ -26,7 +27,6 @@
     "eslint-plugin-import": "^2.8.0",
     "parcel-bundler": "^1.2.1",
     "postcss-cssnext": "^3.0.2",
-    "postcss-modules": "^1.1.0",
     "postcss-reporter": "^5.0.0",
     "stylelint": "^8.4.0",
     "stylelint-config-recommended": "^2.0.1",

@@ -1,13 +1,7 @@
 {
-  "modules": true,
   "plugins": {
-    "stylelint": true,
-    "postcss-modules": true,
     "postcss-cssnext": {
         "browsers": "> 1%"
-    },
-    "postcss-reporter": { 
-      clearReportedMessages: true
     }
   }
 }
