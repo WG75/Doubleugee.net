@@ -1,0 +1,12 @@
+{
+  "plugins": {
+    "postcss-cssnext": {
+    "features": {
+      "customProperties": false
+    },
+      "browsers": "> 1%"
+    },
+    "postcss-easings": true,
+    "postcss-responsive-type": true
+  }
+}
