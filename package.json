@@ -7,25 +7,25 @@
   "author": "doubleu-gee <doubleu.gee10@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node ./src/server/index.js",
-    "watch": "parcel watch src/client/app.js",
-    "dev": "concurrently \"yarn watch\" \"yarn start\"",
+    "watch": "parcel ./public/index.html",
+    "hugo": "hugo -w",
+    "dev": "concurrently \"yarn watch\" \"yarn hugo\"",
     "lint": "eslint src/**/*.js",
     "lint:fix": "yarn lint --fix",
     "lintcss": "stylelint src/client/styles/**/*.css",
     "lintcss:fix": "yarn lintcss --fix"
   },
   "dependencies": {
-    "express": "^4.16.2"
+    "express": "^4.16.2",
   },
   "devDependencies": {
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "concurrently": "^3.5.1",
+    "parcel-bundler": "^1.4.1",
     "eslint": "^4.14.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
-    "parcel-bundler": "1.0.0",
     "postcss-cssnext": "^3.0.2",
     "postcss-easings": "^1.0.1",
     "postcss-responsive-type": "^1.0.0",
